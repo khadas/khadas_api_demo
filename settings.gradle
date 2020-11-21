@@ -1,0 +1,2 @@
+rootProject.name='khadas_api_demo'
+include ':app'

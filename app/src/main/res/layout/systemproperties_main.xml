@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/systemproperties_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/read_systemproperties_int_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAllCaps="false"
+            android:text="read int" />
+
+        <TextView
+            android:id="@+id/read_systemproperties_int_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+			
+        <Button
+            android:id="@+id/read_systemproperties_string_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAllCaps="false"
+            android:text="read string" />
+
+        <TextView
+            android:id="@+id/read_systemproperties_string_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />			
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/write_systemproperties_int_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAllCaps="false"
+            android:text="write systemproperties int" />
+
+        <Button
+            android:id="@+id/write_systemproperties_string_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAllCaps="false"
+            android:text="write systemproperties string" />
+
+        <TextView
+            android:id="@+id/write_systemproperties_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

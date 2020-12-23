@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	
+     <TextView 
+         android:id="@+id/textView_rgbId"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00FF00"
+         android:textSize="25dp"
+         android:text="Rgb Color Control"/>	 
+    <RadioGroup 
+        android:id="@+id/rgb_GroupId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton 
+            android:id="@+id/off_ButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="off color Matrix "/>
+        <RadioButton 
+            android:id ="@+id/standard_ButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="standard color"/>
+        <RadioButton 
+            android:id ="@+id/warm_ButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="warm color"/>
+        <RadioButton 
+            android:id ="@+id/cold_ButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cold color"/>					
+     </RadioGroup>
+
+</LinearLayout>

@@ -21,6 +21,21 @@ android {
         }
     }
 
+    signingConfigs {
+        release {
+            storeFile file("khadas_api.jks")
+            storePassword 'khadas'
+            keyAlias 'platform'
+            keyPassword 'khadas'
+        }
+
+        debug {
+            storeFile file("khadas_api.jks")
+            storePassword 'khadas'
+            keyAlias 'platform'
+            keyPassword 'khadas'
+        }
+    }
 }
 
 dependencies {

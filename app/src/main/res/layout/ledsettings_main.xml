@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	
+     <TextView 
+         android:id="@+id/textView_whiteLedId"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00FF00"
+         android:textSize="25dp"
+         android:text="White LED"/>	 
+    <RadioGroup 
+        android:id="@+id/whiteLed_GroupId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton 
+            android:id="@+id/w_heartbeatButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="heartbeat"/>
+        <RadioButton 
+            android:id ="@+id/w_onButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="on"/>
+        <RadioButton 
+            android:id ="@+id/w_offButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="off"/>			
+     </RadioGroup>
+     <TextView 
+         android:id="@+id/textView_redLedId"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00FF00"
+         android:textSize="25dp"
+         android:layout_marginTop="10dp"
+         android:text="Red LED"/>	 
+     <RadioGroup 
+        android:id="@+id/redLed_GroupId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton 
+            android:id="@+id/r_heartbeatButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="heartbeat"/>
+        <RadioButton 
+            android:id ="@+id/r_onButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="on"/>
+        <RadioButton 
+            android:id ="@+id/r_offButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="off"/>
+     </RadioGroup>
+
+</LinearLayout>

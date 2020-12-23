@@ -1,19 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wesion.khadas_api_demo">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wesion.khadas_api_demo"
+    android:sharedUserId="android.uid.system">
 
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
+        android:name="com.wesion.khadas_api_demo.MainApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<!-- execSuCmd -->
+		<activity
+            android:name="com.wesion.khadas_api_demo.ExecSuCmdSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>					
+        </activity>
+		
+		<!-- LedSet -->
+		<activity
+            android:name="com.wesion.khadas_api_demo.LedSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>					
+        </activity>
+		
+		<!-- FanSet -->
+		<activity
+            android:name="com.wesion.khadas_api_demo.FanSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>					
+        </activity>
+		
+		<!-- WolSet -->
+		<activity
+            android:name="com.wesion.khadas_api_demo.WolSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>					
+        </activity>
+
+		<!-- Language -->
+		<activity
+            android:name="com.wesion.khadas_api_demo.LanguageSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>		
+        </activity>		
+
+		<!-- SetTime -->
+		<activity
+            android:name="com.wesion.khadas_api_demo.SetTimeSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>					
+        </activity>		
+
+		<!-- silentInstall -->
+		<activity
+            android:name="com.wesion.khadas_api_demo.SilentInstallSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+		<!-- Gpio -->
+		<activity
+            android:name="com.wesion.khadas_api_demo.GpioSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+		<!-- HDMI -->
+		<activity
+            android:name="com.wesion.khadas_api_demo.HdmiSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- SystemProperties -->
+        <activity
+            android:name="com.wesion.khadas_api_demo.SystemPropertiesSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Reboot -->
+        <activity
+            android:name="com.wesion.khadas_api_demo.RebootSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- ShutDown -->
+        <activity
+            android:name="com.wesion.khadas_api_demo.ShutDownSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sleep -->
+        <activity
+            android:name="com.wesion.khadas_api_demo.SleepSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Screenrecord -->
+        <activity
+            android:name="com.wesion.khadas_api_demo.ScreenrecordSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- InstallPackage -->
+        <activity
+            android:name="com.wesion.khadas_api_demo.InstallPackageSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- I2c -->
+        <activity
+            android:name="com.wesion.khadas_api_demo.I2cSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Uart -->
+        <activity
+            android:name="com.wesion.khadas_api_demo.UartSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Log -->
+        <activity
+            android:name="com.wesion.khadas_api_demo.LogSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		
+		<!-- Rgb -->
+        <activity
+            android:name="com.wesion.khadas_api_demo.RgbSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

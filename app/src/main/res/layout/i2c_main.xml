@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/i2c_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="96" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/i2c_read_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAllCaps="false"
+            android:text="i2c_read_byte_data(4,0x0e,xx)//kxtj3" />
+
+        <TextView
+            android:id="@+id/i2c_read_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+			
+        <Button
+            android:id="@+id/i2c_write_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textAllCaps="false"
+            android:text="i2c_write_byte_data(4,0x0e,0x60,xx)//kxtj3" />
+
+        <TextView
+            android:id="@+id/i2c_write_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />			
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	
+     <TextView 
+         android:id="@+id/textView_fanId"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00FF00"
+         android:textSize="25dp"
+         android:text="Fan Control"/>	 
+    <RadioGroup 
+        android:id="@+id/fan_GroupId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton 
+            android:id="@+id/auto_ButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Automatic speed control(temperature dependent)"/>
+        <RadioButton 
+            android:id ="@+id/Level_1_ButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level 1"/>
+        <RadioButton 
+            android:id ="@+id/Level_2_ButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level 2"/>
+        <RadioButton
+            android:id ="@+id/Level_3_ButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level 3"/>
+        <RadioButton
+            android:id ="@+id/Level_4_ButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level 4"/>
+        <RadioButton
+            android:id ="@+id/Level_5_ButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level 5"/>
+        <RadioButton 
+            android:id ="@+id/off_ButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="off"/>				
+     </RadioGroup>
+
+</LinearLayout>
